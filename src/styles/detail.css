@@ -1,0 +1,259 @@
+/* Contract detail and procedure */
+.back-link {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  font-size: 12px;
+  color: #71806e;
+  margin-bottom: 10px;
+}
+.detail-badges {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: -10px 0 25px;
+  font-size: 11px;
+  color: var(--muted);
+}
+.detail-badges .badge,
+.detail-badges .category {
+  font-size: 11px;
+}
+.missed-notice {
+  border: 1px solid #e6d6c7;
+  background: #f7ede4;
+  padding: 22px 24px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  color: #946047;
+}
+.missed-notice h2 {
+  margin-bottom: 10px;
+}
+.missed-notice p {
+  font-size: 12px;
+}
+.missed-notice > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 30px;
+  font-size: 12px;
+}
+.missed-notice strong {
+  display: block;
+  font-size: 18px;
+  margin-top: 4px;
+}
+.detail-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background: white;
+  border: 1px solid var(--line);
+  padding: 24px 5px;
+  border-radius: 9px;
+  margin-bottom: 24px;
+}
+.detail-metrics > div {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  padding: 0 24px;
+  border-right: 1px solid var(--line);
+}
+.detail-metrics > div:last-child {
+  border: 0;
+}
+.detail-metrics span {
+  font-size: 11px;
+  color: var(--muted);
+}
+.detail-metrics strong {
+  font-size: clamp(18px, 2vw, 26px);
+  font-variant-numeric: tabular-nums;
+}
+.detail-metrics small {
+  font-size: 11px;
+  color: #708268;
+}
+.detail-columns {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 24px;
+  align-items: start;
+}
+.panel {
+  background: white;
+  padding: 26px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+.panel h2 {
+  margin-bottom: 16px;
+}
+.panel p {
+  font-size: 12px;
+  line-height: 1.9;
+}
+.decision-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.decision-options .button {
+  flex: 1;
+}
+.info-list {
+  margin: 0;
+}
+.info-list > div {
+  display: grid;
+  grid-template-columns: 85px 1fr;
+  gap: 12px;
+  padding: 13px 0;
+  border-bottom: 1px solid #edf0e9;
+  font-size: 12px;
+}
+.info-list > div:last-child {
+  border-bottom: 0;
+}
+.info-list dt {
+  color: var(--muted);
+}
+.info-list dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+.weekend-note {
+  padding: 12px 16px;
+  background: #f1ecda;
+  color: #857243;
+  border-radius: 6px;
+  font-size: 12px;
+}
+.checklist > label,
+.checklist-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 13px;
+  padding: 20px 0;
+  border-top: 1px solid var(--line);
+}
+.checklist > label {
+  cursor: pointer;
+  min-height: 64px;
+}
+.checklist strong {
+  display: block;
+  font-size: 12px;
+}
+.checklist small {
+  display: block;
+  font-size: 11px;
+  color: var(--muted);
+  margin-top: 6px;
+}
+.checklist input[type="checkbox"] {
+  margin: 1px 0 0;
+}
+.step-check {
+  width: 22px;
+  height: 22px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #b4c4b2;
+  border-radius: 4px;
+  font-size: 10px;
+  flex-shrink: 0;
+}
+.checklist-step > div {
+  flex: 1;
+  min-width: 0;
+}
+.date-label {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  font-size: 11px;
+  margin-top: 14px;
+  color: #6b7868;
+}
+.date-label select {
+  font-size: 11px;
+}
+.date-label input {
+  max-width: 230px;
+}
+.disabled {
+  opacity: 0.55;
+}
+.success-note {
+  background: #eaf2e2;
+  color: #42623d;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+.delete-area {
+  margin-top: 8px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+}
+.delete-area .button {
+  margin-right: 10px;
+}
+.delete-area p {
+  font-size: 12px;
+}
+
+/* Calculation trail */
+.calculation-timeline {
+  list-style: none;
+  margin: 24px 0 16px 6px;
+  padding: 0 0 0 22px;
+  border-left: 1px solid #d5dfd0;
+}
+.calculation-timeline li {
+  position: relative;
+  padding: 0 0 24px;
+}
+.calculation-timeline li:last-child {
+  padding-bottom: 0;
+}
+.calculation-timeline li::before {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  border: 2px solid #91a889;
+  background: white;
+  top: 5px;
+  left: -27px;
+}
+.calculation-timeline span {
+  font-size: 11px;
+  color: #86907f;
+  display: block;
+  margin-bottom: 5px;
+}
+.calculation-timeline strong {
+  display: block;
+  font-size: 14px;
+}
+.calculation-timeline small {
+  display: block;
+  color: #8b9584;
+  font-size: 10px;
+  margin-top: 6px;
+}
+.expiry-history {
+  max-height: 180px;
+  overflow-y: auto;
+  font-size: 12px;
+  line-height: 2;
+}
+.timeline-result strong {
+  color: #46643c;
+  font-size: 22px;
+}

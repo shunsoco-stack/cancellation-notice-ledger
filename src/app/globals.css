@@ -1,0 +1,195 @@
+﻿@import "tailwindcss";
+@import "../styles/shell.css";
+@import "../styles/ledger.css";
+@import "../styles/forms.css";
+@import "../styles/detail.css";
+@import "../styles/timeline.css";
+@import "../styles/ledger-responsive.css";
+
+/* Foundations */
+:root {
+  --ink: #243332;
+  --muted: #6d7776;
+  --line: #e4e8e3;
+  --paper: #f5f6f2;
+  --green: #315b4d;
+  --danger: #ac4b3a;
+  --sidebar: #182d35;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Arial, "Noto Sans JP", "Yu Gothic", Meiryo, sans-serif;
+  font-size: 14px;
+  line-height: 1.65;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  border-radius: 7px;
+}
+button {
+  cursor: pointer;
+}
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+input,
+select,
+textarea {
+  width: 100%;
+  min-width: 0;
+  border: 1px solid #ccd4cd;
+  padding: 11px 12px;
+  background: white;
+  color: var(--ink);
+}
+input,
+select {
+  min-height: 44px;
+}
+textarea {
+  resize: vertical;
+}
+:focus-visible {
+  outline: 3px solid #73998b;
+  outline-offset: 3px;
+}
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+h1 {
+  font-size: 28px;
+  line-height: 1.45;
+  letter-spacing: 0.035em;
+  margin-bottom: 10px;
+}
+h2 {
+  font-size: 17px;
+  line-height: 1.5;
+  font-weight: 700;
+}
+h3 {
+  font-size: 14px;
+}
+small {
+  font-size: 12px;
+}
+svg {
+  flex-shrink: 0;
+}
+strong {
+  font-weight: 600;
+}
+
+/* Shared controls and typography */
+.button {
+  min-height: 44px;
+  padding: 10px 17px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 1px solid #d1d9d2;
+  background: white;
+  font-weight: 600;
+  font-size: 13px;
+  white-space: nowrap;
+}
+.button:hover {
+  background: #edf1ec;
+}
+.button.primary {
+  background: var(--green);
+  border-color: var(--green);
+  color: white;
+}
+.button.primary:hover {
+  background: #244b3e;
+}
+.button.subtle {
+  background: transparent;
+  border-color: transparent;
+}
+.button.selected {
+  background: #e6eee5;
+  border-color: var(--green);
+  color: #274d3e;
+}
+.button.danger-button {
+  background: #ac4b3a;
+  color: white;
+  border-color: #ac4b3a;
+}
+.button-row,
+.toolbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.eyebrow {
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  font-weight: 700;
+  color: #6e8276;
+  margin-bottom: 9px;
+}
+.muted,
+.field-help {
+  color: var(--muted);
+}
+.field-help {
+  font-size: 12px;
+  line-height: 1.8;
+  margin: 12px 0;
+}
+.text-danger {
+  color: var(--danger);
+}
+.text-success {
+  color: #316747;
+}
+.tiny-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  display: inline-block;
+  background: currentColor;
+  flex-shrink: 0;
+}
+.preserve-lines {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.empty-state {
+  text-align: center;
+  padding: 45px 20px;
+  color: var(--muted);
+}
+.empty-state h1,
+.empty-state h2 {
+  color: var(--ink);
+}
+.loading {
+  padding: 100px 20px;
+  text-align: center;
+  color: var(--muted);
+}
+.span-two {
+  grid-column: 1 / -1;
+}
