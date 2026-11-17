@@ -1,4 +1,4 @@
-﻿# 解約通知期限帳
+# 解約通知期限帳
 
 ## 概要
 
@@ -110,13 +110,17 @@ UTF-8 BOM・CRLF・引用符エスケープに対応し、数式として解釈�
 
 ## スクリーンショット
 
-| 画面         | 画像                                                  |
-| ------------ | ----------------------------------------------------- |
-| ホーム       | [01-home.png](docs/screenshots/01-home.png)           |
-| 契約一覧     | [02-contracts.png](docs/screenshots/02-contracts.png) |
-| 契約詳細     | [03-detail.png](docs/screenshots/03-detail.png)       |
-| 年表         | [04-timeline.png](docs/screenshots/04-timeline.png)   |
-| 登録フォーム | [05-form.png](docs/screenshots/05-form.png)           |
+![今月・来月の手続き](docs/screenshots/01-home.png)
+
+03はスマートフォン幅（390×844）、それ以外はデスクトップ幅（1440px）で公開URLから撮影しています。
+
+| 画面                       | 画像                                                  |
+| -------------------------- | ----------------------------------------------------- |
+| ホーム                     | [01-home.png](docs/screenshots/01-home.png)           |
+| 契約一覧                   | [02-contracts.png](docs/screenshots/02-contracts.png) |
+| 契約詳細（スマホ 390×844） | [03-detail.png](docs/screenshots/03-detail.png)       |
+| 年表                       | [04-timeline.png](docs/screenshots/04-timeline.png)   |
+| 登録フォーム               | [05-form.png](docs/screenshots/05-form.png)           |
 
 ## ローカル起動方法
 
